@@ -1,0 +1,22 @@
+<nav>Account Login</nav>
+<main>
+  <h3>Account Login</h3>
+  <form action="/login" method="POST">
+    <input type="text" placeholder="email" name="email">
+    <input type="text" placeholder="password" name="password">
+    <button type="submit">sign in</button>
+  </form>
+</main>
+
+{{#if error}}
+<script>
+  alert('帳號密碼沒輸入或是輸入錯誤!')
+</script>
+{{/if}}
+
+{{#if passwordError}}
+<script>
+  alert('密碼輸入錯誤')
+</script>
+{{/if}}
+
