@@ -9,7 +9,6 @@ router.post('/', (req, res) => {
     .then(data => {
       if (data !== null) {
         if (data.password === user.password) {
-          console.log(data)
           return res.render('login', { firstName: data.firstName })
         }
         else {

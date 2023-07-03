@@ -1,12 +1,18 @@
-<nav>Account Login</nav>
-<main>
-  <h3>Account Login</h3>
-  <form action="/login" method="POST">
-    <input type="text" placeholder="email" name="email">
-    <input type="text" placeholder="password" name="password">
-    <button type="submit">sign in</button>
-  </form>
-</main>
+<div class="d-flex flex-column align-items-center">
+  <nav class="navbar bg-body-tertiary " style="width:100%; ">
+    <div class="container-fluid d-flex justify-content-center">
+      <span class="navbar-brand mb-0 h1 " style="font-size:30px;">Account Login</span>
+    </div>
+  </nav>
+  <main class="d-flex flex-column justify-content-around" style="margin:150px auto; height:300px; width:100%;">
+    <h3 style="text-align: center; margin-bottom:20px;">Account Login</h3>
+    <form action="/login" method="POST" class="d-flex flex-column justify-content-around align-items-center" style="height:300px;"  >
+      <input style="width:400px; height:50px;" type="text" placeholder="email" name="email">
+      <input style="width:400px; height:50px;" type="text" placeholder="password" name="password">
+      <button type="submit" style="width:200px;">sign in</button>
+    </form>
+  </main>
+</div>
 
 {{#if error}}
 <script>
